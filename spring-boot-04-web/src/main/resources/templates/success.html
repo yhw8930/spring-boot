@@ -8,5 +8,23 @@
     <h2>成功</h2>
     <hr/>
     <p th:text="${name}">这里显示名字</p>
+
+    <!-- success.html 引入头部公共片段 -->
+    <!--方式1：
+    header : 公共片段所在模板的文件名
+    header_common ：声明代码片段名 -->
+    <div th:replace="header :: header_common"></div>
+    <!--方式2：选择器写法
+    header : 公共片段所在模板的文件名
+    #header_common_id: 声明代码片的id值
+    -->
+    <div th:replace="header :: #header_common_id"></div>
+    <!--
+    th:insert 和 th:replace的区别
+    th:insert和th:replace都可以引入片段，两者的区别在于
+    th:insert： 保留引入时使用的标签
+    th:replace：不保留引入时使用的标签, 将声明片段直接覆盖当前引用标签
+    -->
+    <!-- <h2 th:insert="header :: header_common"></h2> -->
 </body>
 </html>
