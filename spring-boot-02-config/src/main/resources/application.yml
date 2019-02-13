@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+#  配置文件
+#emp:
+#  name: 张三
+#  age: 18
+#  boss: true
+#  birthday: 1998/04/24
+#  salary: 4000
+#  map:
+#    key1: value1
+#    key2: value2
+#  list:
+#    - one
+#    - two
+#    - three
+#  forte:
+#    name: java
+#    time: 4
