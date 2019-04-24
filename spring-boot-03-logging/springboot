@@ -1,0 +1,22 @@
+2018-12-22 23:07:06.839  INFO 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : Starting SpringBoot03LoggingApplicationTests on LAPTOP-OM0RTP46 with PID 18440 (started by 11709 in E:\IDEA\ideaProject\spring-boot-03-logging)
+2018-12-22 23:07:07.641 DEBUG 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-22 23:07:07.646  INFO 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : No active profile set, falling back to default profiles: default
+2018-12-22 23:07:12.581  INFO 18440 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 23:07:13.455  INFO 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : Started SpringBoot03LoggingApplicationTests in 9.075 seconds (JVM running for 14.02)
+2018-12-22 23:07:14.266 TRACE 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 trace 日志信息！
+2018-12-22 23:07:14.269 DEBUG 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 debug 日志信息！
+2018-12-22 23:07:14.270  INFO 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 info 日志信息
+2018-12-22 23:07:14.271  WARN 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 warn 日志信息
+2018-12-22 23:07:14.272 ERROR 18440 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 error 日志信息
+2018-12-22 23:07:14.294  INFO 18440 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-22 23:10:08.301 >>> [main] >>> INFO  >>>2018-12-22 23:10:08.304 >>> [main] >>> DEBUG >>>2018-12-22 23:10:08.311 >>> [main] >>> INFO  >>>2018-12-22 23:10:14.302 >>> [main] >>> INFO  >>>2018-12-22 23:10:15.405 >>> [main] >>> INFO  >>>2018-12-22 23:10:16.139 >>> [main] >>> TRACE >>>2018-12-22 23:10:16.139 >>> [main] >>> DEBUG >>>2018-12-22 23:10:16.140 >>> [main] >>> INFO  >>>2018-12-22 23:10:16.140 >>> [main] >>> WARN  >>>2018-12-22 23:10:16.140 >>> [main] >>> ERROR >>>2018-12-22 23:10:16.166 >>> [Thread-2] >>> INFO  >>>2018-12-22 23:44:59.129  INFO 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : Starting SpringBoot03LoggingApplicationTests on LAPTOP-OM0RTP46 with PID 13800 (started by 11709 in E:\IDEA\ideaProject\spring-boot-03-logging)
+2018-12-22 23:44:59.169 DEBUG 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2018-12-22 23:44:59.169  INFO 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : The following profiles are active: prod
+2018-12-22 23:45:04.064  INFO 13800 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 23:45:04.986  INFO 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : Started SpringBoot03LoggingApplicationTests in 7.455 seconds (JVM running for 11.206)
+2018-12-22 23:45:05.531 TRACE 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 trace 日志信息！
+2018-12-22 23:45:05.531 DEBUG 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 debug 日志信息！
+2018-12-22 23:45:05.531  INFO 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 info 日志信息
+2018-12-22 23:45:05.531  WARN 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 warn 日志信息
+2018-12-22 23:45:05.531 ERROR 13800 --- [main] .y.s.SpringBoot03LoggingApplicationTests : 这是 error 日志信息
+2018-12-22 23:45:05.541  INFO 13800 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>迭代方式测试</title>
+</head>
+<body>
+<table border="1px">
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+    </tr>
+    <tr th:each="user:${userList} ">
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.gender == 1 ? '女': '男'}"></td>
+    </tr>
+</table>
+<hr/>
+<ul>
+    <li th:each="user : ${userList}" th:text="${user.username}"></li>
+</ul>
+<hr/>
+<!-- 获取迭代状态-->
+<table border="1px">
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>总数</th>
+        <th>偶数/奇数</th>
+        <th>第一个元素</th>
+        <th>最后一个元素</th>
+    </tr>
+    <!--
+    user : 第1个值,代表每次迭代出对象,名字任意取
+    iterStat : 第2个值,代表每次迭代器内置对象, 名字任意取, 并有如下属性:
+    index : 当前迭代下标 0 开始
+    count : 当前迭代下标 1 开始
+    size : 获取总记录数
+    current : 当前迭代出的对象
+    even/odd : 当前迭代是偶数还是奇数 (1开始算,返回布尔值)
+    first : 当前是否为第一个元素
+    last : 当前是否为最后一个元素
+    -->
+    <tr th:each="user, iterStat : ${userList}">
+        <td th:text="${iterStat.count}">0</td>
+        <td th:text="${user.username}">mengxuegu</td>
+        <td th:text="${user.gender == 1 ? '女' : '男'}">未知</td>
+        <td th:text="${iterStat.size}">0</td>
+        <td th:text="${iterStat.even}? '偶数' : '奇数'"></td>
+        <td th:text="${iterStat.first}"></td>
+        <td th:text="${iterStat.last}"></td>
+    </tr>
+</table>
+<hr/>
+<h3 th:if="not ${#lists.isEmpty(userList)}">if判断，显示说明有值</h3>
+<h3 th:unless="${#lists.isEmpty(userList)}">unless判断，显示说明有值</h3>
+
+<div th:switch="${sex}">
+    <!--1女, 2男-->
+    <p th:case="1">女</p>
+    <!--判断sex的值和下面取出man的值是否相等,相等则显示-->
+    <p th:case="${man}">男</p>
+    <!--如果值都不在上述case里，则th:case="*"语句生效。-->
+    <p th:case="*">未知</p>
+</div>
+
+<br/>
+<div th:text="${desc}"></div>
+<div th:utext="${desc}"></div>
+
+<!--使用th:object 直接取出对象，然后写对象里的属性名即可获取属性值-->
+<div th:object="${session.user}">
+    <p>
+        姓名:<span th:text="*{username}">xxxx</span>
+    </p>
+    <p>
+        性别:<span th:text="*{gender == 1 ? '女' : '男'}">xxxx</span>
+    </p>
+</div>
+<div>
+    热部署测试。。。
+</div>
+</body>
+</html>

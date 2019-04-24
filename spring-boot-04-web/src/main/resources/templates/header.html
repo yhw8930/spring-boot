@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>模板文件</title>
+</head>
+<body>
+    <!--方式一 这是th:fragment声明公共片段-->
+    <div th:fragment="header_common">
+        这是th:fragment声明公共片段
+    </div>
+    <!--方式e二 这是id声明公共片段-->
+    <div id="header_common_id">
+        这是id声明公共片段
+    </div>
+</body>
+</html>

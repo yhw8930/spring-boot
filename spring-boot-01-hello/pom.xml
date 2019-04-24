@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yhw8930</groupId>
+    <artifactId>spring-boot-01-hello</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!--
+    spring-boot-starter : Spring Boot 场景启动器，Spring Boot将所有的功能场景抽取出来，做成一个
+    个的starters（启动器），只需项目里引入相关场景的starter， 就会将它所有依赖导入进来。要用什么
+    功能就导入什么场景的启动器。
+    spring-boot-starter-parent ：它父依赖 spring-boot-dependencies
+    spring-boot-dependencies 是管理了 Spring Boot项目中的所有依赖版本
+    -->
+    <!-- 在 pom.xml 中添加 Spring Boot 相关的父级依赖 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+    </parent>
+    <!-- 在 dependencies 添加构建 Web 项目相关的依赖 导入了 Web 项目运行所依赖的组件；如 Tomcat / SpringMVC等-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+    <!-- 在 pom.xml 添加如下插件后， 将这个工程打成 jar 包后，可直接通过 java -jar 的命令运行 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

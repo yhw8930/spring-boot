@@ -1,0 +1,15 @@
+server:
+  port: 8084
+#spring:
+#  profiles:
+#    active: dev #激活哪个profile , 当前激活的是 dev 开发环境
+#---
+#server:
+#  port: 8085
+#spring:
+#  profiles: dev #指定属于哪个环境, dev 环境时使用
+#---
+#server:
+#  port: 8886
+#spring:
+#  profiles: prod #指定属于哪个环境, prod 环境时使用
